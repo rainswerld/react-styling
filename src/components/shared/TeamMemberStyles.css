@@ -1,0 +1,36 @@
+:local(.team-member) {
+  /* width (each team-member takes up 1/3rd of the .66rem for gutters) */
+  flex-basis: calc((100% / 3) - .66rem);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem
+}
+
+:local(.team-members-container) {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+:local(.team-member-image) {
+  /* Setup background image */
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  color: white;
+  /* Put text at bottom */
+  display: flex;
+  align-items: flex-end;
+}
+
+:local(.description) {
+  /* padding: top, left/right, down */
+  padding: 1rem 1rem 0.5rem;
+}
+
+:local(.team-member-name) {
+  padding-left: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+  width: 100%
+}
